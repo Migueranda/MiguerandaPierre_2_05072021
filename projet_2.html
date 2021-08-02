@@ -14,8 +14,9 @@
     <body>
         <div class="bloc_de_page">
             <header>
-                
+
                 <!--Inserstion de l'image logo Reservia-->
+
                 <div>
                     <img src="Projet2_Reservia/images/logo/Reservia@3x.png" class="logo_reservia" alt="logo Reservia"/>
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
@@ -28,6 +29,8 @@
                     <input type="text" name="ville" id="ville" placeholder="Marseille,France"/>
                     <input type="submit" value="Rechercher" id="rechercher"/>                            
                 </div>
+
+                <!-- Liens en haut à droite -->
 
                 <nav class="liens">
                     <ul class="liens_entete">   
@@ -44,161 +47,272 @@
                     <ul class="liens_filtres">
                         <li>Filtres</li>                        
                         <li><i class="fas fa-money-bill-wave"></i><a href="#">Économique</a></li>                         
-                         <li><i class="fas fa-child" ></i><a href="#">Familial</a></li>                        
-                         <li><i class="fas fa-heart" ></i><a href="#">Romantique</a></li>                       
+                        <li><i class="fas fa-child" ></i><a href="#">Familial</a></li>                        
+                        <li><i class="fas fa-heart" ></i><a href="#">Romantique</a></li>                       
                         <li><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></li>                    
-                     </ul>                   
-                </nav> 
-                
+                    </ul>                   
+                </nav>               
 
-                 <div class="info_icon">
+                <div class="info_icon">
                     <i class="fas fa-info" ></i>Plus de 500 logements sont disponibles dans cette ville
-                 </div> 
+                </div> 
                  
                  <!-- hébergements à Marseille + Les plus populaires -->
                  
-                 <div class="cont_heberg_populaire">
+                <div class="cont_heberg_populaire">
                      <!-- hébergements -->
-                     
-                     <div class="hebergement">
-                        <h2 class="titre_hebergement"> Hébergements à Marseille</h2>                                                                                     
-                    <article class="cartes">    
-                    <div class="carte">                        
-                        <div> 
-                        <!--<div class="images_hebergement">  -->                       
-                           <img src="Projet2_Reservia/images/hebergements/4_small/test1.jpg" />                           
-                       <!-- </div>-->                     
-                        </div>        
-                            <p>Auberge la cannebière</p>
-                            <div>Nuit à partir de 25<i class="fas fa-euro-sign"></i></div>
+                    <div class="hebergement">
+                        <h2 class="titre_hebergement"> Hébergements à Marseille</h2> 
 
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star grey_star"></i>                            
-                        </div>
-                    </div> 
+                        <article class="cartes">    
+                            <div class="carte">                        
+                                <div> 
+                                <!--<div class="images_hebergement">  -->                       
+                                <img src="Projet2_Reservia/images/hebergements/4_small/test1.jpg" />                           
+                            <!-- </div>-->                     
+                                </div> 
+                                    
+                                <div class="titre">Auberge la cannebière</div>
+                                <div>Nuit à partir de 25<i class="fas fa-euro-sign"></i></div>
 
-                    <div class="carte">
-                        <div>                                 
-                            <img src="Projet2_Reservia/images/hebergements/4_small/test2.jpg"/>
-                        </div>
-                            <p>Auberge la cannebière</p>
-                            <div>Nuit à partir de 25<i class="fas fa-euro-sign"></i></div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star grey_star"></i>                            
+                                </div>                        
+                            </div> 
 
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                                                        
-                        </div>
-                    </div>
+                            <div class="carte">
+                                <div>                                 
+                                    <img src="Projet2_Reservia/images/hebergements/4_small/test2.jpg"/>
+                                </div>
+                                    <div class="titre">Auberge la cannebière</div>
+                                    <div>Nuit à partir de 25<i class="fas fa-euro-sign"></i></div>
 
-                    <div class="carte">
-                        <div>                                 
-                            <img src="Projet2_Reservia/images/hebergements/4_small/test3.jpg"/>
-                        </div>
-                            <p>Hôtel Les mouettes</p>
-                            <div>Nuit à partir de 76<i class="fas fa-euro-sign"></i></div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>                                                        
+                                </div>
+                            </div>
 
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star grey_star"></i>                                                        
-                        </div>
-                    </div>
-                
-                
+                            <div class="carte">
+                                <div>                                 
+                                    <img src="Projet2_Reservia/images/hebergements/4_small/test3.jpg"/>
+                                </div>
+                                    <div class="titre">Hôtel Les mouettes</div>
+                                    <div>Nuit à partir de 76<i class="fas fa-euro-sign"></i></div>
 
-                    <div class="carte">
-                        <div>                                 
-                            <img src="Projet2_Reservia/images/hebergements/4_small/test4.jpg"/>
-                        </div>
-                            <p>Hôtel de la mer</p>
-                            <div>Nuit à partir de 46<i class="fas fa-euro-sign"></i></div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star grey_star"></i>                                                        
+                                </div>
+                            </div>
+                        
+                        
 
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star grey_star"></i>
-                            <i class="fas fa-star grey_star"></i>                                                        
-                        </div>
-                    </div>
+                            <div class="carte">
+                                <div>                                 
+                                    <img src="Projet2_Reservia/images/hebergements/4_small/test4.jpg"/>
+                                </div>
+                                    <div class="titre">Hôtel de la mer</div>
+                                    <div>Nuit à partir de 46<i class="fas fa-euro-sign"></i></div>
 
-                    <div class="carte">
-                        <div>                                 
-                            <img src="Projet2_Reservia/images/hebergements/4_small/test5.jpg"/>
-                        </div>
-                            <p>Auberge Le panier</p>
-                            <div>Nuit à partir de 23<i class="fas fa-euro-sign"></i></div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star grey_star"></i>
+                                    <i class="fas fa-star grey_star"></i>                                                        
+                                </div>
+                            </div>
 
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star grey_star"></i>                                                        
-                        </div>
-                    </div>
+                            <div class="carte">
+                                <div>                                 
+                                    <img src="Projet2_Reservia/images/hebergements/4_small/test5.jpg"/>
+                                </div>
+                                    <div class="titre">Auberge Le panier</div>
+                                    <div>Nuit à partir de 23<i class="fas fa-euro-sign"></i></div>
 
-                    <div class="carte">
-                        <div>                                 
-                            <img src="Projet2_Reservia/images/hebergements/4_small/test6.jpg"/>
-                        </div>
-                            <p>Hôtel chez Amina</p>
-                            <div>Nuit à partir de 96<i class="fas fa-euro-sign"></i></div>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star grey_star"></i>                                                        
+                                </div>
+                            </div>
 
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>                                                        
-                        </div>
-                    </div>
-                 
-                </article> 
+                            <div class="carte">
+                                <div>                                 
+                                    <img src="Projet2_Reservia/images/hebergements/4_small/test6.jpg"/>
+                                </div>
+                                <div class="titre">Hôtel chez Amina</div>
+                                    <div>Nuit à partir de 96<i class="fas fa-euro-sign"></i></div>
+
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>                                                        
+                                </div>
+                            </div>
+                        
+                        </article> 
                    <p class="afficher_plus">Afficher plus</p>            
                                          
-                </div>
-            
-                     <!-- Les plus populaires -->
-                
+                    </div>                   
+                     <!-- LE PLUS POPULAIRES -->                
 
-                     <section class="populaire">
-                        <h2 class="titre_populaire">Les plus populaires</h2>
-                         
-                         <div class="cartes_gauche">
-                             <div class="carte_gauche"> 
-                                 <div>                                     
-                                  <img src="Projet2_Reservia/images/hebergements/4_small/image1.jpg"/>
+                    <aside class="populaire">
+                            <h2 class="titre_populaire">Les plus populaires</h2>
+                            
+                            <div class="cartes_aside">
+                                <!-- ma première carte aside -->
+                                <div class="carte_aside"> 
+                                    <div>                                        
+                                    <img src="Projet2_Reservia/images/hebergements/4_small/test_image.jpg"/>                                    
+                                    </div>
+                                    <div class="content"> 
+                                        <div>
+                                            <div class="titre">Hôtel le soleil du matin</div>
+                                            Nuit à partir de 128<i class="fas fa-euro-sign"></i>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>                                                        
+                                        </div>                                    
+                                    </div>
                                 </div>
-                                 
-                            </div>  
-                        </div>
-                     </section>
-
-                
-                             <!-- Image -->
-                             <div></div>
-                             <!-- contient titre + desc + note-->
-                             <div></div>
-                    </div>
-                    </div>
-                    </div>
+                                <!-- ma deuxième carte aside -->
+                                <div class="carte_aside"> 
+                                    <div>                                        
+                                        <img src="Projet2_Reservia/images/hebergements/4_small/test_image1.jpg"/>                                    
+                                    </div>
+                                    <div class="content"> 
+                                        <div>
+                                            <div class="titre">Au coeur de l'eau chambres d'hôtes</div>
+                                            Nuit à partir de 71<i class="fas fa-euro-sign"></i>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>                                                        
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                <!-- ma troisième carte aside -->      
+                                <div class="carte_aside"> 
+                                    <div>                                        
+                                        <img src="Projet2_Reservia/images/hebergements/4_small/test_image2.jpg"/>                                    
+                                    </div>
+                                    <div class="content"> 
+                                        <div>
+                                            <div class="titre">Hôtel Tout bleu et Blanc</div>
+                                            Nuit à partir de 68<i class="fas fa-euro-sign"></i>
+                                        </div>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>                                                        
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div> <!-- .cartes_aside -->       
+                    </aside>
+                </div> <!-- div.class "cont_heberg_populaire" -->       
             </section> 
-                     
-               
-        </div>
-    
-        
 
+            <section>
+                <div class="conteneur_activite">
+                    <h2>Activités à Marseille</h2>
+
+                    <div class="activite">   
+                        <div class="grande_activite">         
+                            
+                        <img src="Projet2_Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                            
+
+                        </div>
+                         
+
+                    </div>
+
+                   <!-- <div class="contenu_petit_activite">   
+
+                        <div class="petit_activite">
+                            <div>
+                                <img src="Projet2_Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">                          
+                            </div>
+                                <p>Fort de pomégues</p>                    
+                        </div>  
+                
+
+                        <div class="deuxieme_image">
+                            <div>
+                             <img src="Projet2_Reservia/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">                          
+                            </div>
+                            <p>Îles de Frioul</p>                    
+                                 
+                        </div>  
+
+                    </div> -->
+
+                    <!-- </div> -->              
+                    <!-- </div> -->
+                </div>                 
+            </section>
+
+            <footer>
+                <ul>
+                    <li>A propos</li>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de ventes</li>
+                    <li>Données et confidentialité</li>
+        
+                </ul>
+                
+                  
+                    
+                   <!--  Deuxième de pie de page-->
+                <ul>
+                    <li>Nos hébergements</li>
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>           
+                </ul>
+
+                    <!-- Troisième parti de pie de page-->
+
+                <ul>
+                    <li>Assistance</li>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>           
+                </ul>
+               
+            </footer>
+              
+                
+
+               
+
+        </div>
+        
     </body>
     
 </html>
+
