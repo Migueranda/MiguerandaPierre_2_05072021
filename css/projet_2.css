@@ -8,22 +8,23 @@ body{
 .bloc_de_page
 {
     font-family: 'Raleway', sans-serif;    
-    top: 5%;
+    top: 5%; 
     width: 90%;    
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:auto; 
+    margin-right:auto; 
+
 }
 /* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
 
 .logo_reservia{
    width: 10%;
    
+   
 }
 h2{
     font-size: 0.8rem;
 }
-h3
-{
+h3{
     font-size:0.6em;
     font-weight: normal;
 }
@@ -65,9 +66,10 @@ h3
 ul.liens_entete{
     position: absolute;   
     left: 65%;
-    top: 40px;
+    top: 35px;
     justify-content: flex-end;
-}
+} 
+
 
 ul{
     display: flex;  
@@ -179,13 +181,7 @@ div.info_icon {
       
 }
 
-aside.populaire{   
-      
-    background-color: #F2F2F2;
-    border-radius: 15px;
-    width:30% ;    
-    margin-left: 3%;   
-}
+
 
 /* Style d'image Hébergement*/
 h2 {
@@ -195,85 +191,142 @@ h2 {
 
 .titre_hebergement{    
     margin-left: 3%;
+    font-size: 1.3em;
 }
 
 article.cartes {
     display: flex;
     flex-wrap: wrap;
    /* align-items: center;*/
-    justify-content: center;
+    justify-content: space-around;
+    
 }
-
-div.carte {
+ a.carte {
     background-color: white;
      border-radius: 13%;
-     width: 35%;  
-     padding-left: 5px;
-     padding-top: 5px;
+     /* width: 35%;    */
+     padding-left: 1%;
+     padding-top: 1%;
      font-size: 0.8em;  
-     margin-right:2%;
-     margin-bottom: 3%;
-     width: 220px; 
-     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;     
-     
+      margin-right:2%;
+     margin-bottom: 3%;     
+     width: 220px;  
+     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;       
  }
 
-div.carte > div > img{        
+ a.carte:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+ }
+
+
+a.carte > div > img{        
     width: 97%;
-    border-radius:15px 15px 0px 0px;     
+    border-radius:15px 15px 0px 0px;    
+    height: 120px;
+    object-fit: cover;     
 }
 
 
 /* rating en bleu générique */
- div.carte > .rating {
+ a.carte > .rating {
      color: #0065FC;
      margin-top: 5px;
      margin-bottom: 15px;
  }
  
  /* on spécifie l'étoile qui doit être grise */
- div.carte > .rating > i.grey_star  {
+ a.carte > .rating > i.grey_star  {
      color: #F2F2F2;
- } 
+ }
+ 
+a.carte > div.titre {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 
   .afficher_plus{
       font-weight: bold;
   }  
 
-  /* LES PLUS POPULAIRES */
-  
- div.carte_aside{
+
+
+  /* LES PLUS POPULAIRES */  
+
+
+
+  aside.populaire{   
+      
+    background-color: #F2F2F2;
+    border-radius: 15px;    
+     width:30% ;    
+    margin-left: 3%; 
+    /* flex-wrap: wrap;
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-direction: column;   */
+
+}
+
+h2.titre_populaire{
+    font-size: 1.3em;
+    margin-left: 7%;
+
+
+}
+
+h2.titre_populaire > i {
+    float: right;
+    margin-right: 7%;
+}
+
+/* div.cartes_aside{    
+    display: flex;
+    flex-direction: column;      
+    
+} */
+
+ div.carte_aside{
+     display: flex;      
     background-color: white;
-    border-radius: 15px;
-    /* width: 30%;*/  
-    margin-left: 15px;
-    padding-top: 5px;
-   /* padding-left: 10px;*/
-    font-size: 0.8em; 
-    /*margin-right:5%;*/
-     margin-bottom: 45px;
-    width: 280px; 
+    border-radius: 8%;
+    font-size: 0.8em;
+    /* justify-content:space-between; */
+    margin-bottom: 15%;
+     width: 280px; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+    margin-left: 6%; 
+    /* margin-top:15% ; */
+    /* flex-wrap: wrap;     */
+    /* width: 30%; */     
+    /* padding-top: 1%; */    
+   /* padding-left: 10px;*/     
+    /*margin-right:5%;*/    
 }
 
 div.carte_aside > div {
-    margin-left: 5px;    
+    margin-left: 2%;
+    margin-top: 2%; 
+    margin-bottom: 1%; 
 } 
 
 div.carte_aside > div:first-child{
-    width: 40%;
+     width: 40%;  
 }
 
 div.carte_aside > div:last-child{
-    width: 60%;
+     width: 60%;  
 }
 
 div.carte_aside > div > img{        
     width: 100%;    
-    border-radius:15px 0px 0px 15px;  
-      
+    border-radius:15px 0px 0px 15px; 
+    height: 123px;
+    object-fit: cover;  
+    /* padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 3%; */
+     /* padding: auto;  */      
 }
 
 div.carte_aside > div > h6 {
@@ -282,111 +335,154 @@ div.carte_aside > div > h6 {
 
 div.carte_aside > div > .rating {
     color: #0065FC;
-    margin-bottom: 5px; 
+    margin-bottom: 5%; 
 }
 
 div.content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 div.content > div > div.titre {
     font-weight: bold;
     margin-bottom: 10px;
 }
-div.carte > div.titre {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
 /* ACTIVITES A MARSEILLE */
 
-div.activite{
-    /*display: flex;
-    width: 90%;
-    background-color: white;*/   
-}
-
-div.grande_activite > img {
-    /* border-radius:15px 15px 0px 0px; */
-    /* width: 250px;*/
-    /* height: 435px; */
-    /* height:auto; */
-    /* object-fit: cover; */
-    /*  object-position: 100% 0;*/
-    display: block;
+.conteneur_activite{
+    display: flex;     
     width: 100%;
-    height: auto; 
+    height: 397px;   
+    margin-bottom: 5%;
+    margin-top: 5%;    
+    justify-content: space-around;    
 }
 
-div.grande_activite{
+.activite{
+    display: inline;
+    width: 23%;       
+}
+
+div.image_vieux_port{
     background-color:white;
-    border: #0065FC solid;
-    width: 256px;  
-    height: 435px;
-    /* border-radius: 15px;  */
-    
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
-     margin-right: 25px;
-     margin-bottom: 250px;
-     margin: 10px;*/
-     /* width: 100%;    */
-     /* height: auto;  */  
-}
-
-div.grande_activite > p{
-    margin-left: 15px;
-    padding-bottom: 15px; 
-    padding-top: 0px;
-    font-weight: bold;
-}
-
-/*div.contenu_petit_activite{ 
-    display: flex;
-    flex-direction: column;   
-    
-}
-
-div.petit_activite {   
-    background-color:white;
-    border-radius: 15px;
-     width: 263px;       
+    border-radius: 15px; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    padding-left: 3%; 
-    padding-top: 2%; 
-    padding-right;%;
+    padding-bottom: 5%;     
 }
- div.deuxieme_image{
-    background-color: white;
-    border-radius: 15px;
-    width: 263px;
-         
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    padding-left: 3%; 
-    padding-top: 2%; 
-    padding-right:0%;
+
+
+div.image_vieux_port > img {
+     border-radius: 25px 25px 0px 0px; 
+     object-fit: cover;
+     width: 100%;
+    height: 350px;
+    padding-bottom: 3%;       
+}
+
+
+ div > h5{
+     display: inline;
+     margin-left: 5%; 
+     font-weight: bold;     
 } 
 
-
-
-div.deuxieme_image > div > img{
-    border-radius:15px 15px 0px 0px;
-    width: 96%;   
-    height:80px;
-
+div.contenu_petit_activite{ 
+    display: flex;
+    display: inline;
+    flex-direction: column; 
+    width: 23%;
+    justify-content: space-around;       
 }
 
-div.petit_activite > div > img{
-    border-radius:15px 15px 0px 0px;
-    width: 96%;
-   height: 180px;
-}*/
+div.image_fort_de_pomegues { 
+     
+    background-color:white;
+    border-radius: 15px;
+    width: 100%;           
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 3%;     
+}
 
+div.image_fort_de_pomegues > div > img{
+    border-radius:15px 15px 0px 0px;
+    width: 100%;
+   height: 180px;
+   object-fit: cover; 
+   padding-bottom: 3%;
+}
+
+
+ div.image_Îles_de_Frioul{
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;         
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 15%;
+    padding-bottom: 5%;    
+} 
+
+div.image_Îles_de_Frioul > div > img{
+    border-radius:15px 15px 0px 0px;
+    width: 100%;   
+    height:93px;
+    padding-bottom: 3%;     
+}
+
+.image_calanques{
+    display: inline;
+    width: 23%;    
+}
+
+.grande_activite_calanques{
+    background-color:white;
+    border-radius: 15px; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 5%;    
+}
+
+.grande_activite_calanques > img{
+    border-radius: 25px 25px 0px 0px; 
+    object-fit: cover;
+    width: 100%;
+   height: 350px;
+   padding-bottom: 4%; 
+}
+
+.image_notre_damme_garde{
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;         
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 5%;   
+}
+
+.image_notre_damme_garde > div > img{
+    border-radius:15px 15px 0px 0px;
+    width: 100%;   
+    height:120px;
+    padding-bottom: 3%;
+}
+
+
+.image_parc_longchamp{
+    background-color:white;
+    border-radius: 15px;
+    width: 100%;           
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 18%;
+    padding-bottom: 5%;
+    
+}
+
+.image_parc_longchamp > div > img{
+    border-radius:15px 15px 0px 0px;
+    width: 100%;
+   height: 140px;
+   object-fit: cover; 
+   padding-bottom: 3%;   
+}
 
 /* FOOTER */
 
