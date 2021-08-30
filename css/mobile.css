@@ -1,0 +1,273 @@
+body{    
+    margin: 0px 0px 0px 0px;              
+}
+
+.bloc_de_page{    
+    width: 100%; 
+}
+
+/* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
+div.liens{    
+    text-align: center;
+    justify-content: center; 
+ }  
+
+.logo_reservia{   
+   padding-right: 130px;   
+}
+
+div.sinscrire {
+    visibility: visible;
+    margin-top: 20px;  
+    color:#0065FC;
+    font-weight: bold;
+}
+
+ul.liens_entete{    
+    padding: unset;       
+}
+
+#activites_liens{
+    border-color:#F2F2F2;
+}
+
+ul.liens_entete > li > a {    
+    padding-right: 45px;
+    padding-left: 45px; 
+} 
+
+ul.liens_entete > li > a {
+    border-color:#0065FC;  
+    border-top-style:unset;  
+    border-bottom-style: solid ;
+    border-width: 3px;  
+    padding-bottom: 8px;    
+}
+
+ul.liens_entete > li > a:hover {    
+    border-top-style:unset; 
+}
+
+nav > ul.liens_entete > li:last-child{
+    display: none;
+    visibility: hidden;  
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 10px;    
+}
+
+h3{    
+    font-size:1em;    
+}
+
+/* CHAMP DE SAISI */
+
+.champ_recherche{    
+    justify-content: center;    
+}
+
+#icon{  
+    height: 40px;
+    width:30px;
+    padding-left: 20px;    
+} 
+
+#ville{
+    height:35px ; 
+    width: 185px; 
+    border: solid 1px #F2F2F2;     
+}
+
+::placeholder {
+    font-size: 1.3em;
+}
+
+#rechercher{  
+    visibility: hidden;
+    width: 15px;
+    border-radius:13px 13px 13px 13px;
+}
+
+.icon_input{
+    position: relative;
+}
+
+.icon_input i{
+    position: absolute;    
+    left: 0;
+    top: 13px;    
+    color: white;
+    visibility: visible;
+}
+#recherche{
+    border: #0065FC ;
+    background-color: #0065FC;
+    width: 40px;
+    height: 40px;
+    border-radius:13px;
+    visibility: visible;
+    margin-left: -13px;   
+}
+
+ /* SECTION: LIEN DE FILTRE */
+ ul.liens_filtres {    
+    flex-wrap: wrap;   
+    margin-left: 35px;
+}
+
+ul.liens_filtres > li:first-child {    
+    flex: 3 100%;
+    margin-bottom: 5%;
+    justify-content: flex-start;
+    border: none;    
+    background-color:none;  
+}
+
+ul.liens_filtres > li {     
+    margin-right: 25px;    
+    margin-bottom: 10px;
+}
+
+div.info_icon {
+    font-size: 0.8em;    
+    margin-left: 25px;    
+}
+
+/* Hébergements à Marseille + Les plus populaires */
+
+.cont_heberg_populaire{    
+    width: 100%;
+    justify-content: center;
+    align-items: center;     
+}
+
+.cont_heberg_populaire > div.hebergement{
+    order: 2;
+}
+
+/* HERBERGEMENT(MARSEILLE)*/
+.hebergement{       
+    background-color:white;    
+    width: 100%;    
+    margin-top: 5%;    
+}
+
+/* Style d'image Hébergement*/
+
+
+#titre_hebergement{    
+    margin-left: 25px;    
+}
+
+a.carte {    
+    width: 330px;    
+}
+
+a.carte > div > img{ 
+    width: 99%;    
+    height: 10em;     
+}
+
+.afficher_plus{   
+    margin-left: 27px;     
+}  
+
+  /* LES PLUS POPULAIRES */  
+
+aside.populaire{      
+    border-radius: unset;    
+    margin-left: unset;    
+}
+
+.cartes_aside{     
+    margin-left: auto;  
+    margin-right: auto;   
+    flex: 1 310px;
+    min-width: 375px;   
+}
+
+h2.titre_populaire{   
+    margin-left: 27px;
+}
+ div.carte_aside{    
+    margin-bottom: 9%;  
+    width: 330px; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;        
+}
+
+div.carte_aside > div {    
+    padding-right: 3%;    
+} 
+
+/* ACTIVITES A MARSEILLE */
+#titre_activite{    
+    margin-left: 10%;  
+    font-size: 1.3em;  
+}
+
+/* activite_xl - start */
+
+a.activite_xl {    
+    width: 330px;
+    padding-bottom: 5%;  
+    margin-bottom: 5%;  
+}
+
+
+
+a.activite_xl > img {      
+    height: 8em;
+    
+}
+
+
+/* activite_xl - stop */
+
+/* activite_md - start */
+div.conteneur_activite_md {    
+    justify-content: center;
+    align-items: center;    
+}
+
+a.activite_md {    
+    width: 330px;    
+    margin-bottom: 5%;
+}
+
+.img_md {    
+    
+    height: 8em;
+}
+
+.img_sm {    
+    height: 8em;
+}
+
+
+/* activite_md - stop */
+
+/* FOOTER */
+
+footer{     
+    margin-bottom: 4%; 
+} 
+
+.info_pied_de_page{ 
+    flex-direction: column;
+}
+
+.info_pied_de_page > ul{      
+    width: 80%;        
+} 
+
+.info_pied_de_page > ul > li:first-child{     
+    padding-bottom:10px;     
+} 
+
+.info_pied_de_page > ul > li{
+    padding-bottom: 5px;
+   
+} 

@@ -1,12 +1,12 @@
 body{
-    background-color: white;    
+    background-color: white;
 }
 
 .bloc_de_page{
     font-family: 'Raleway', sans-serif; 
     width: 90%; 
-    margin-left:auto; 
-    margin-right:auto;     
+    margin-left:auto;  
+    margin-right:auto; 
 }
 
 /* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
@@ -47,6 +47,13 @@ h2 {
 h3{
     font-size:0.9em;
     font-weight: normal;
+}
+
+h4 {
+    font-size:1.1em;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 
 .champ_recherche{
@@ -120,11 +127,17 @@ ul.liens_entete > li > a:hover {
 
  /* SECTION: LIEN DE FILTRE */
  
-nav > ul.liens_filtres > div{
-    display: flex;     
+
+ul.liens_filtres {
+    display: flex;
+    padding-left: 0em;     
 }
 
-ul.liens_filtres > div > li { 
+ul.liens_filtres > li:first-child{
+    border: none;
+}
+
+ul.liens_filtres > li { 
     font-size: 0.9em;
     font-weight: bold;
     display: flex;
@@ -137,15 +150,15 @@ ul.liens_filtres > div > li {
     margin-right: 15px;   
 }
 
-ul.liens_filtres{
-    padding-left: 0em; 
+ul.liens_filtres > li:first-child:hover {   
+    background-color: inherit;
 }
 
-ul.liens_filtres > div > li:first-child{
-    border: none;
-} 
+ul.liens_filtres > li:hover {   
+    background-color: #F2F2F2;
+}
 
-ul.liens_filtres > div > li > i {
+ul.liens_filtres > li > i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,14 +169,9 @@ ul.liens_filtres > div > li > i {
     height: 45px; 
 }
 
-ul.liens_filtres > div > li > a {
+ul.liens_filtres > li > a {
     margin-left:10px;
     margin-right:10px;    
-}
-
-ul.liens_filtres > div > li:hover {
-    
-    background-color: #F2F2F2;
 }
 
 div.info_icon > i{ 
@@ -216,7 +224,7 @@ article.cartes {
 
 a.carte {
     background-color: white;
-    border-radius: 13%;    
+    border-radius: 15px;    
     padding-left: 1%;
     padding-top: 1%;
     font-size: 0.8em;  
@@ -224,12 +232,12 @@ a.carte {
     margin-bottom: 3%;     
     width: 220px; 
     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
- }
+}
 
  a.carte:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     
- }
+}
  
 a.carte > div > img{        
     width: 97%;
@@ -237,12 +245,6 @@ a.carte > div > img{
     height: 120px;
     object-fit: cover;     
 }
-
-a.carte > div.titre {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 
 /* rating en bleu générique */
  a.carte > .rating {
@@ -296,7 +298,7 @@ h2.titre_populaire > i {
  div.carte_aside{
     display: flex;    
     background-color: white;
-    border-radius: 8%;
+    border-radius: 15px;
     font-size: 0.8em;    
     margin-bottom: 13%;  
     width: 280px; 
@@ -345,12 +347,6 @@ div.content {
     justify-content: space-between; 
 }
 
-div.content > div > div.titre {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-
 /* ACTIVITES A MARSEILLE */
 #titre_activite{
     margin-left: 2%;    
@@ -373,7 +369,7 @@ a.activite_xl {
     border-radius: 15px; 
     background-color:white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px ;
-    padding-bottom: 5%;    
+    padding-bottom: 15px;    
 }
 
 a.activite_xl:hover {
