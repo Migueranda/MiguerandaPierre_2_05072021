@@ -4,7 +4,9 @@ body{
 
 .bloc_de_page{
     font-family: 'Raleway', sans-serif; 
-    width: 90%; 
+    width: 90%;
+    min-width: 1100px;     
+    max-width: 1100px; 
     margin-left:auto;  
     margin-right:auto; 
 }
@@ -12,13 +14,13 @@ body{
 /* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
 
 .logo_reservia{
-    width: 115px;        
+    width: 115px;    
 }
 
 div.liens{
     display: flex;
-    justify-content: space-between; 
-    margin-top: 37px;   
+    justify-content: space-between;     
+    margin-top: 2.3em;
     flex-wrap: wrap; 
 }
 
@@ -41,7 +43,7 @@ div.sinscrire {
 
 h2 {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.3em;    
 }
 
 h3{
@@ -51,18 +53,20 @@ h3{
 
 h4 {
     font-size:1.1em;
-    font-weight: bold;
-    margin-top: 8px;
-    margin-bottom: 10px;
+    font-weight: bold;    
+    margin-top: 0.8em;   
+    margin-bottom: 0.8em;
 }
+
+/* CHAMP DE SAISI */
 
 .champ_recherche{
     display: flex; 
 }
 
 #rechercher{
-    background-color: #0065FC;
-    height: 32px;
+    background-color: #0065FC;    
+    height: 3.1em;
     width: 10%;
     font-size: 0.7em;
     color: white;
@@ -71,8 +75,8 @@ h4 {
     font-weight: bold;
 }
 
-#ville{
-    height:30px ;
+#ville{    
+    height:2.6em;
     width: 10%;
     font-size: 0.7em;
     font-weight: bold;    
@@ -84,21 +88,15 @@ h4 {
 }
 
 #icon{    
-    background-color:#F2F2F2 ;
-    height: 32px;
-    width:2%;
-    padding-left: 10px;    
+    background-color:#F2F2F2 ;    
+    height: 2.2em;
+    width:2%;    
+    padding-left: 0.9em; 
     border-radius:10px 0px 0px 10px;
     display: flex;
     align-items:center ;
 }
 /* LIENS D'ENTETE */
-
-
-ul.liens_entete > li:last-child{
-    color:#0065FC;
-    font-weight: bold;
-}
 
 ul{
     display: flex;  
@@ -108,9 +106,14 @@ li{
     list-style: none;    
 }
 
-ul.liens_entete > li > a {
-    padding-right: 20px;
-    padding-left: 20px;   
+ul.liens_entete > li:last-child{
+    color:#0065FC;
+    font-weight: bold;
+}
+
+ul.liens_entete > li > a {    
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 a, a:hover, a:focus, a:active { 
@@ -120,14 +123,12 @@ a, a:hover, a:focus, a:active {
 
 ul.liens_entete > li > a:hover {
     color:#0065FC;
-    border-top-style: solid;
-    border-width: 2px;  
-    padding-top: 50px;   
+    border-top-style: solid;    
+    border-width: 0.2em;    
+    padding-top: 3em;
 }
 
  /* SECTION: LIEN DE FILTRE */
- 
-
 ul.liens_filtres {
     display: flex;
     padding-left: 0em;     
@@ -146,8 +147,8 @@ ul.liens_filtres > li {
     border: solid #F2F2F2;
     border-left-style: none;
     border-radius: 40px 40px 40px 40px;
-    text-align: center;
-    margin-right: 15px;   
+    text-align: center;    
+    margin-right: 2em; 
 }
 
 ul.liens_filtres > li:first-child:hover {   
@@ -164,14 +165,20 @@ ul.liens_filtres > li > i {
     align-items: center;
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px; 
+    border-radius: 50%;    
+    width: 3em;    
+    height: 3em;
 }
 
-ul.liens_filtres > li > a {
-    margin-left:10px;
-    margin-right:10px;    
+ul.liens_filtres > li > a {    
+    margin-left:0.9em;    
+    margin-right:0.9em;
+}
+
+div.info_icon {
+    font-size: 0.9em;
+    display: flex;    
+    margin-bottom: 1em;
 }
 
 div.info_icon > i{ 
@@ -179,19 +186,13 @@ div.info_icon > i{
     justify-content: center;
     align-items: center;
     color: #0065FC;
-    border: 1px solid #F2F2F2 ;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 0.8em;
-    margin-right: 5px;  
-    margin-top: 9px; 
-}
-
-div.info_icon {
-    font-size: 0.9em;
-    display: flex;
-    margin-bottom: 15px;
+    border: 0.1em solid #F2F2F2 ;
+    border-radius: 50%;    
+    width: 1.8em;
+    height: 1.8em;   
+    font-size: 0.8em;    
+    margin-right: 0.8em;    
+    margin-top: 0.7em;
 }
 
 /* Hébergements à Marseille + Les plus populaires */
@@ -203,12 +204,11 @@ div.info_icon {
 
 /* HERBERGEMENT(MARSEILLE)*/
 .hebergement{       
-    background-color: #F2F2F2;
-    border-radius: 15px;
+    background-color: #F2F2F2;    
+    border-radius: 1em;
     width: 65%;
     padding-left:2%;            
 }
-
 /* Style d'image Hébergement*/
 
 
@@ -224,34 +224,33 @@ article.cartes {
 }
 
 a.carte {
-    background-color: white;
-    border-radius: 15px;    
-    padding-left: 1%;
-    padding-top: 1%;
+    background-color: white;    
+    border-radius: 1.2em;     
+    padding-left: 0.4em;
+    padding-top: 0.4em;
     font-size: 0.8em;  
     margin-right:2%;
-    margin-bottom: 3%;     
-    width: 220px; 
+    margin-bottom: 3%;
+    width: 17em;
     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
 }
 
  a.carte:hover {
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
 }
  
 a.carte > div > img{        
     width: 97%;
-    border-radius:15px 15px 0px 0px;    
-    height: 120px;
+    border-radius:15px 15px 0px 0px;  
+    height: 9em;
     object-fit: cover;     
 }
 
 /* rating en bleu générique */
  a.carte > .rating {
     color: #0065FC;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    margin-top: 0.6em;
+    margin-bottom: 1em;
  }
  
  /* on spécifie l'étoile qui doit être grise */
@@ -265,47 +264,45 @@ a.carte > div > img{
 
   /* LES PLUS POPULAIRES */  
 
-aside.populaire{   
-    display: flex; 
+ aside.populaire{   
+    display: flex;   
     flex-wrap: wrap; 
     background-color: #F2F2F2;
-    border-radius: 15px;    
-    margin-left: 3%;
-    flex-direction: column;     
-}
+    border-radius: 1em; 
+    margin-left: 3%;    
+    flex-direction: column;      
+} 
 
 .cartes_aside{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    flex: 1 310px;
-    min-width: 310px;
-    max-width: 35%;    
-}
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    flex: 1 16em;
+    min-width: 20em;
+    max-width: 35%;     
+} 
  
 
 h2.titre_populaire{
     font-size: 1.3em;
     margin-left: 7%;
+    margin-bottom: 0em;
 }
 
 h2.titre_populaire > i {
     float: right;
     margin-right: 7%;   
 }
-  
 
  div.carte_aside{
     display: flex;    
     background-color: white;
-    border-radius: 15px;
+    border-radius: 1em;
     font-size: 0.8em;    
     margin-bottom: 13%;  
-    width: 280px; 
+    width: 20em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-top: -13px;
-    
 }
 
 div.carte_aside > div {
@@ -325,7 +322,7 @@ div.carte_aside > div:last-child{
 div.carte_aside > div > img{        
     width: 100%;    
     border-radius:15px 0px 0px 15px; 
-    height: 123px;
+    height: 9.5em;
     object-fit: cover;         
 }
 
@@ -366,11 +363,11 @@ div.content {
 /* activite_xl - start */
 
 a.activite_xl {
-    width: 245px;
-    border-radius: 15px; 
+    width: 15em;
+    border-radius: 1em; 
     background-color:white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px ;
-    padding-bottom: 15px;    
+    padding-bottom: 1em; 
 }
 
 a.activite_xl:hover {
@@ -380,8 +377,8 @@ a.activite_xl:hover {
 a.activite_xl > img {
     border-radius: 13px 13px 0px 0px; 
     object-fit: cover;
-    width: 100%;
-    height: 350px;
+    width: 100%;   
+    height: 22em;
     padding-bottom: 4%;       
 }
 
@@ -396,13 +393,13 @@ a.activite_xl > h5{
 div.conteneur_activite_md {
     display: flex;    
     flex-direction: column; 
-    width: 245px;
+    width: 15em;
     justify-content: space-between;
 }
 
 a.activite_md {
     background-color:white;
-    border-radius: 15px;
+    border-radius: 1em;
     width: 100%;           
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding-bottom: 5%;
@@ -420,11 +417,11 @@ a.activite_md > img {
 }
 
 .img_md {
-    height: 160px;
+    height: 10em;
 }
 
 .img_sm {
-    height:120px;
+    height:8em;
 }
 
 h5 {
@@ -457,7 +454,7 @@ footer{
     flex-direction: column; 
     width: 30%;     
     justify-content: center;     
-  } 
+} 
 
 .info_pied_de_page > ul > li:first-child{ 
     font-size: 1em;
@@ -466,6 +463,6 @@ footer{
 } 
 
 .info_pied_de_page > ul > li{
-    padding-bottom: 10px;
+    padding-bottom: 0.8em;
     font-size: 0.8em;     
 } 
