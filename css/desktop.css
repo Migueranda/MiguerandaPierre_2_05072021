@@ -6,39 +6,66 @@ body{
     font-family: 'Raleway', sans-serif; 
     width: 90%;
     min-width: 1100px;     
-    max-width: 1100px; 
+    max-width: 1400px; 
     margin-left:auto;  
     margin-right:auto; 
 }
 
 /* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
 
-.logo_reservia{
-    width: 115px;    
-}
+img.logo_reservia{ 
+    width: 17%;
+ }  
+
+ div.liens > div:nth-child(1){
+    width: 80%;
+    border-style: none;
+ }
 
 div.liens{
-    display: flex;
-    justify-content: space-between;     
-    margin-top: 2.3em;
-    flex-wrap: wrap; 
+    display: flex;    
+    margin-top: 2em;
+    align-items: center;
+    width: 100%;    
+    font-size: 1.1em;       
+ } 
+
+ /* LIENS D'ENTETE */
+
+a, a:hover, a:focus, a:active { 
+    text-decoration: none;
+    color: inherit;
 }
+
+div.liens > div > a:hover { 
+    color:#0065FC;
+    border-top-style: solid;    
+    border-width: 2px;    
+    padding-top: 3.1em;
+} 
+
+ .liens> div  > a{     
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+
+ div.liens > div:nth-child(2){      
+    color: #0065FC; 
+    font-weight: bold; 
+ }
+
+  div.liens > div:nth-child(2){
+    order: 3;
+ } 
 
 /* MODIFICATIONS RESPONSIVE (start) */
-div.sinscrire {
-    visibility: hidden;
- }
-#rechercher{
-    visibility: visible;
-}
-
 #recherche{
     visibility: hidden;
 }
 
 .icon_input i{
     visibility: hidden;
-}
+} 
  /* end */
 
 h2 {
@@ -96,37 +123,7 @@ h4 {
     display: flex;
     align-items:center ;
 }
-/* LIENS D'ENTETE */
 
-ul{
-    display: flex;  
-}
-
-li{
-    list-style: none;    
-}
-
-ul.liens_entete > li:last-child{
-    color:#0065FC;
-    font-weight: bold;
-}
-
-ul.liens_entete > li > a {    
-    padding-right: 1em;
-    padding-left: 1em;
-}
-
-a, a:hover, a:focus, a:active { 
-    text-decoration: none;
-    color: inherit;
-}
-
-ul.liens_entete > li > a:hover {
-    color:#0065FC;
-    border-top-style: solid;    
-    border-width: 0.2em;    
-    padding-top: 3em;
-}
 
  /* SECTION: LIEN DE FILTRE */
 ul.liens_filtres {
@@ -200,6 +197,7 @@ div.info_icon > i{
 .cont_heberg_populaire{
     display: flex;     
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* HERBERGEMENT(MARSEILLE)*/

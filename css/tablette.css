@@ -9,43 +9,60 @@ a, a:hover, a:focus, a:active {
 }
 
 .bloc_de_page{   
-    font-family: 'Raleway', sans-serif;
-    max-width: 788px;
+    font-family: 'Raleway', sans-serif;   
     margin-left:auto;  
-    margin-right:auto; 
+    margin-right:auto;    
 }
 
 /* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
-.logo_reservia{ 
-    padding-right: 260px;
-    width: 25%; 
- }
+img.logo_reservia{ 
+    width: 40%;
+ }      
 
 div.liens{
-    display: flex;
-    justify-content: center; 
-    text-align: center; 
+    display: flex;    
     margin-top: 2.3em;
-    flex-wrap: wrap; 
- }  
+    text-align: center  ;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.5em; 
+    padding-right: 5%;
+    padding-left: 5%;       
+ } 
+ 
+ div.liens > div:nth-child(1){
+    width: 50%;
+    border-style: none;
+ }
+ 
+ div.liens > div:nth-child(2){    
+    width: 50%;     
+    color: #0065FC; 
+    font-weight: bold;
+    border-style: none;
+      
+ }
 
-div.sinscrire {
-    visibility: visible; 
-    margin-top: 25px; 
-    color:#0065FC; 
-    font-weight: bold; 
-    font-size:2.2em; 
-}
+  div.liens > div:nth-child(3){     
+    width: 50%;    
+} 
+
+ div.liens > div:nth-child(4){   
+    width: 50%;    
+ } 
 
 h2 {
     font-weight: bold; 
     font-size: 1.5rem; 
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 
 h3{    
     font-size:1em;
     font-weight: normal;
+}
+.deux_titre{
+    text-align: center;
 }
 
 h4 {
@@ -68,8 +85,7 @@ h4 {
     font-size: 0.7em;
     color: white;
     border: none;
-    font-weight: bold;
-    visibility: hidden; 
+    font-weight: bold;   
     width: 15px; 
     border-radius:13px 13px 13px 13px; 
 }
@@ -115,45 +131,24 @@ h4 {
     background-color: #0065FC; 
     height: 50px; 
     width: 50px; 
-    border-radius:13px; 
-    visibility: visible;
+    border-radius:13px;     
     margin-left: -13px; 
 }
 
-/* LIENS D'ENTETE */
 
-ul{
-    display: flex;  
-}
 
-li{
-    list-style: none;    
-}
-
-ul.liens_entete{    
-    padding: unset; 
-}
-
-nav > ul.liens_entete > li:last-child{
-    display: none; 
-    visibility: hidden; 
-}
-
-ul.liens_entete > li > a {
-    border-color:#0065FC;
-    border-bottom-style: solid ; 
-    border-width: 3px; 
+div.liens > div{ 
+     border-color:#0065FC;   
+    border-bottom-style:  solid; 
+    border-width: 3px;   
     padding-bottom: 8px; 
-    font-size: 1.3em; 
-    padding-right: 120px;
-    padding-left: 120px;
-}
+} 
 
-ul.liens_entete > li > a:hover {
+div.liens > div > a:hover {
     color:#0065FC;
     border-width: 0.2em;
     padding-top: 3em;   
-}
+} 
 
  /* SECTION: LIEN DE FILTRE */
  ul.liens_filtres {
@@ -269,7 +264,8 @@ div.info_icon {
 article.cartes {
     display: flex;
     flex-wrap: wrap;   
-    justify-content: space-around;         
+    justify-content: space-around;  
+          
 }
 
 a.carte {
@@ -280,8 +276,9 @@ a.carte {
     font-size: 0.8em;  
     margin-right:2%;
     margin-bottom: 3%;     
-    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;      
-    width: 330px;    
+    box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40%;
+    
 }
 
 a.carte:hover {
@@ -318,16 +315,17 @@ aside.populaire{
     display: flex; 
     flex-wrap: wrap;
     flex-direction: column; 
-    background-color: #F2F2F2;     
+    background-color: #F2F2F2; 
+    width: 100%;    
 }
 
-.cartes_aside{ 
-    justify-content: center; 
+.cartes_aside{     
+    justify-content:space-between;
+    justify-content: space-around;
     align-items: center;    
-    margin-bottom: 3em;
-    min-width: 20em;   
-    display: flex; 
-    flex-direction: row;        
+    margin-bottom: 3em;    
+    display: flex;     
+    flex-wrap: wrap;
 } 
 
 h2.titre_populaire{  
@@ -347,9 +345,8 @@ h2.titre_populaire > i {
     border-radius: 1em;
     font-size: 0.8em; 
     margin-top: 0px 0px 0px 0px;     
-    width: 230px; 
-    margin-right: 13px; 
-    margin-left: 13px;    
+    width: 230px;  
+    margin-bottom: 15px;    
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
 }
 
@@ -401,26 +398,33 @@ div.content {
 }
 
 .conteneur_activite{
-    display: flex;
+    display: flex;    
     flex-wrap: wrap;     
     width: 100%;
     height: auto;    
     margin-bottom: 5%;
-    margin-top: 2%;    
+    margin-top: 2%;
     justify-content: space-around;    
 }
 
 /* activite_xl - start */
 
-a.activite_xl {    
+
+
+a.activite_xl { 
     border-radius: 1em; 
     background-color:white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px ;
-    padding-bottom: 1em; 
-    width: 330px;   
-    margin-bottom: 5%;  
-    order:1; 
+    box-shadow: #64646f33 0px 7px 20px 0px ;
+    padding-bottom: 1.7em;   
+    width: 45%;
+    margin-bottom: 5%;      
+     order: 1;   
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    
 }
+
 
 a.activite_xl:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -430,33 +434,38 @@ a.activite_xl > img {
     border-radius: 13px 13px 0px 0px; 
     object-fit: cover;
     width: 100%;   
-    padding-bottom: 4%;  
+    padding-bottom: 3%;  
     height: 8em;    
+    
 }
 
 a.activite_xl > h5{
     display: inline;
     margin-left: 5%; 
-    font-weight: bold;     
+    font-weight: bold; 
 } 
+
+
 /* activite_xl - stop */
 
 /* activite_md - start */
-div.conteneur_activite_md { 
+ div.conteneur_activite_md { 
     display: flex;    
-    flex-direction: column; 
-    width: 15em;   
+    flex-direction: column;  
+    width: 15em;
+    width: 45%;
     justify-content: center;
     align-items: center;    
-}
+} 
 
 a.activite_md {   
     background-color:white; 
     border-radius: 1em;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding-bottom: 5%;
-    width: 330px;    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+    width: 100%;
     margin-bottom: 5%; 
+    flex-direction: column;
+    display: flex;
 }
 
 a.activite_md:hover {
@@ -471,17 +480,18 @@ a.activite_md > img {
 }
 
 .img_md {    
-    height: 8em; 
+    height: 9em; 
 }
 
 .img_sm {    
-    height: 8em; 
+    height: 9em; 
 }
 
 h5 {
-    display: inline;
-    margin-left: 5%; 
-    font-weight: bold; 
+    display: inline; 
+    margin-left: 5%;    
+    font-weight: bold;
+    font-size: 1em;  
 }
 
 /* activite_md - stop */

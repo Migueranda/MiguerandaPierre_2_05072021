@@ -7,39 +7,63 @@ body{
     font-family: 'Raleway', sans-serif;  
     margin-left:auto;  
     margin-right:auto;
-    width: 375px;    
+    min-width: 320px;
 }
 
 /* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
-.logo_reservia{ 
-    width: 7.2em;  
-    padding-right: 130px;    
- }
 
-div.liens{  
-    display: flex; 
-    margin-top: 2.3em;
-    flex-wrap: wrap;  
-    text-align: center; 
-    justify-content: center; 
- }  
-
-div.sinscrire {
-    visibility: visible; 
-    margin-top: 20px;   
-    color:#0065FC; 
-    font-weight: bold; 
+ img.logo_reservia{ 
+    width: 40%;
 }
+
+div.liens{
+    display: flex;    
+    margin-top: 2.3em;
+    text-align: center  ;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 5%;
+    padding-left: 5%;       
+ } 
+
+div > .logo_reservia{ 
+    width: 50%;     
+}  
+
+ div.liens > div:nth-child(1){
+    width: 50%;
+    border-style: none;
+}
+
+ div.liens > div:nth-child(2){    
+    width: 50%;     
+    color: #0065FC; 
+    font-weight: bold;
+    border-style: none;
+}
+
+ 
+ div.liens > div:nth-child(3){     
+    width: 50%;
+} 
+
+div.liens > div:nth-child(4){   
+    width: 50%;    
+    border-color:#F2F2F2;
+ } 
 
 h2 {
     font-weight: bold; 
     font-size: 1.5rem; 
-    padding-top: 10px;        
+    padding-top: 10px; 
 }
 
 h3{    
     font-size:1em;   
     font-weight: normal;  
+}
+.deux_titre{
+    text-align: center;
 }
 
 /* CHAMP DE SAISI */
@@ -99,47 +123,24 @@ h3{
     margin-left: -13px;    
 }
 
+div.liens > div{ 
+    border-color:#0065FC;   
+   border-bottom-style:  solid; 
+   border-width: 3px;   
+   padding-bottom: 8px; 
+} 
+
+div.liens > div > a:hover {
+   color:#0065FC;
+   border-width: 0.2em;
+   padding-top: 3em;   
+} 
+
 /* LIENS D'ENTETE  */
 
-ul{
-    display: flex;  
-}
-
-li{
-    list-style: none;    
-}
-
-#activites_liens{
-    border-color:#F2F2F2; 
-}
-
-nav > ul.liens_entete > li:last-child{
-    display: none; 
-    visibility: hidden;   
-}
-ul.liens_entete{    
-    padding: unset;       
-}
-
-ul.liens_entete > li > a {
-    border-color:#0065FC;  
-    border-top-style:unset;  
-    border-bottom-style: solid; 
-    border-width: 3px;  
-    padding-bottom: 8px; 
-    padding-right: 45px;
-    padding-left:45px;   
-}
-
 a, a:hover, a:focus, a:active { 
-    text-decoration: none;
-    color: inherit;
-}
-
-ul.liens_entete > li > a:hover { 
-    color:#0065FC;
-    border-width: 0.2em; 
-    padding-top: 3em;     
+    text-decoration: none; 
+    color: inherit; 
 }
 
  /* SECTION: LIEN DE FILTRE */
@@ -223,9 +224,7 @@ div.info_icon > i{
 .cont_heberg_populaire{  
     display: flex;     
     flex-wrap: wrap;  
-    width: 100%; 
-    justify-content: center; 
-    align-items: center;      
+    width: 100%;    
 }
 
 .cont_heberg_populaire > div.hebergement{
@@ -234,8 +233,7 @@ div.info_icon > i{
 
 /* HERBERGEMENT(MARSEILLE)*/
 .hebergement{    
-    border-radius: 1em;  
-    padding-left:2%; 
+    border-radius: 1em;    
     background-color:white;   
     width: 100%;    
     margin-top: 5%;   
@@ -251,8 +249,9 @@ div.info_icon > i{
 
 article.cartes {
     display: flex;
-    flex-wrap: wrap;   
-    justify-content: space-around;     
+    flex-wrap: wrap;
+    max-width: 100%; 
+    justify-content: center;
 }
 
 a.carte { 
@@ -264,7 +263,7 @@ a.carte {
     margin-right:2%;
     margin-bottom: 3%;     
     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
-    width: 330px;    
+    width: 80%;
 }
 
 a.carte:hover {
@@ -299,7 +298,9 @@ aside.populaire{
     display: flex;   
     flex-wrap: wrap; 
     background-color: #F2F2F2;      
-    flex-direction: column; 
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
 }
 
 .cartes_aside{  
@@ -310,8 +311,8 @@ aside.populaire{
     max-width: 35%;       
     margin-left: auto;  
     margin-right: auto; 
-    flex: 1 310px; 
-    min-width: 375px;   
+    flex: 1 310px;    
+    min-width: 100%;
 }
 
 h2.titre_populaire{   
@@ -330,8 +331,8 @@ h2.titre_populaire > i {
     background-color: white; 
     border-radius: 15px;
     font-size: 0.8em;  
-    margin-bottom: 9%;   
-    width: 330px; 
+    margin-bottom: 9%;    
+    width:80%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;        
 }
 
@@ -382,14 +383,14 @@ div.content {
     font-size: 1.3em;
 }
 
-.conteneur_activite{
+section.conteneur_activite{
     display: flex;
     flex-wrap: wrap;     
     width: 100%;
     height: auto;    
     margin-bottom: 5%;
-    margin-top: 2%;    
-    justify-content: space-around;    
+    margin-top: 2%; 
+    justify-content: center;     
 }
 
 /* activite_xl - start */
@@ -397,8 +398,8 @@ div.content {
 a.activite_xl { 
     border-radius: 1em; 
     background-color:white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;   
-    width: 330px; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;    
+    width: 80%;
     padding-bottom: 5%; 
     margin-bottom: 5%; 
 }
@@ -427,7 +428,7 @@ a.activite_xl > h5{
 div.conteneur_activite_md {  
     display: flex;    
     flex-direction: column; 
-    width: 15em;  
+    width: 80%;  
     justify-content: center;
     align-items: center;    
 }
@@ -435,8 +436,8 @@ div.conteneur_activite_md {
 a.activite_md {   
     background-color:white; 
     border-radius: 1em;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 330px;     
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;    
+    width: 100%;
     margin-bottom: 5%; 
     padding-bottom: 6%;
 }
