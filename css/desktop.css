@@ -60,11 +60,11 @@ div.liens > div > a:hover {
 
 /* MODIFICATIONS RESPONSIVE (start) */
 #recherche{
-    visibility: hidden;
+    display: none;
 }
 
 .icon_input i{
-    visibility: hidden;
+    display: none;
 } 
  /* end */
 
