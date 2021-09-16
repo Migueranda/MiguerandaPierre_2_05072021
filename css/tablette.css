@@ -87,6 +87,7 @@ h4 {
     border: none;
     font-weight: bold;   
     width: 15px; 
+    /* visibility: hidden; */
     border-radius:13px 13px 13px 13px; 
 }
 
@@ -123,7 +124,7 @@ h4 {
     top: 17px; 
     color: white;
     visibility: visible;
-    padding-left: 2px; 
+    padding-left: 0px; 
 }
 
 #recherche{
@@ -131,8 +132,9 @@ h4 {
     background-color: #0065FC; 
     height: 50px; 
     width: 50px; 
-    border-radius:13px;     
-    margin-left: -13px; 
+    border-radius:13px;
+    visibility: visible;     
+    margin-left: -19px; 
 }
 
 
