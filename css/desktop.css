@@ -1,7 +1,6 @@
 body{
     background-color: white;
 }
-
 .bloc_de_page{
     font-family: 'Raleway', sans-serif; 
     width: 90%;
@@ -10,13 +9,12 @@ body{
     margin-left:auto;  
     margin-right:auto; 
 }
-
 /* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
 
 img.logo_reservia{ 
     width: 17%;
- }  
-
+ }
+  
  div.liens > div:nth-child(1){
     width: 80%;
     border-style: none;
@@ -28,13 +26,14 @@ div.liens{
     align-items: center;
     width: 100%;    
     font-size: 1.1em;       
- } 
+}
 
  /* LIENS D'ENTETE */
 
-a, a:hover, a:focus, a:active { 
+a, a:hover, a:focus, a:active{ 
     text-decoration: none;
     color: inherit;
+    
 }
 
 div.liens > div > a:hover { 
@@ -42,6 +41,7 @@ div.liens > div > a:hover {
     border-top-style: solid;    
     border-width: 2px;    
     padding-top: 3.1em;
+    text-decoration:none;
 } 
 
  .liens> div  > a{     
@@ -434,8 +434,7 @@ h5 {
 footer{ 
     display: flex; 
     background-color:#F2F2F2;    
-    flex-direction: column;
-    margin-bottom: 5%;  
+    flex-direction: column;   
     flex-wrap: wrap; 
     width: 100%;
     height: auto;    

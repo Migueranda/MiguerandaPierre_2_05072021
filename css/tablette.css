@@ -135,8 +135,6 @@ h4 {
     margin-left: -19px; 
 }
 
-
-
 div.liens > div{ 
      border-color:#0065FC;   
     border-bottom-style:  solid; 
@@ -264,8 +262,7 @@ div.info_icon {
 article.cartes {
     display: flex;
     flex-wrap: wrap;   
-    justify-content: space-around;  
-          
+    justify-content: space-around;
 }
 
 a.carte {
@@ -278,7 +275,6 @@ a.carte {
     margin-bottom: 3%;     
     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 40%;
-    
 }
 
 a.carte:hover {
@@ -408,9 +404,6 @@ div.content {
 }
 
 /* activite_xl - start */
-
-
-
 a.activite_xl { 
     border-radius: 1em; 
     background-color:white;
@@ -422,9 +415,7 @@ a.activite_xl {
     height: 180px;
     display: flex;
     flex-direction: column;
-    
 }
-
 
 a.activite_xl:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -501,13 +492,11 @@ h5 {
 footer{  
     display: flex; 
     background-color:#F2F2F2;    
-    flex-direction: column;
-    margin-bottom: 5%;  
+    flex-direction: column;    
     flex-wrap: wrap; 
     width: 100%;
     height: auto;    
-    justify-content: space-around;   
-    margin-bottom: 4%; 
+    justify-content: space-around; 
 } 
 
 .info_pied_de_page{ 

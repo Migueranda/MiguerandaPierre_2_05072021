@@ -477,8 +477,7 @@ footer{
     flex-wrap: wrap; 
     width: 100%;
     height: auto;    
-    justify-content: space-around;   
-    margin-bottom: 4%; 
+    justify-content: space-around; 
 } 
 
 .info_pied_de_page{ 
