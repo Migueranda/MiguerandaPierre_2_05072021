@@ -156,7 +156,7 @@ ul.liens_filtres > li:first-child {
     margin-bottom: 5%; 
     justify-content: flex-start;
     border: none;    
-    background-color:none;  
+      
 }
 
 ul.liens_filtres > li { 
