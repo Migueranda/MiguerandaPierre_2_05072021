@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>         
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" media="screen and (min-width: 1025px)" type="text/css" href="./css/desktop.css">
+        <link rel="stylesheet" href="./css/desktop.css">
         <link rel="stylesheet" media="screen and (min-width: 481px) and (max-width: 1024px)" href="./css/tablette.css"/>
         <link rel="stylesheet" media="screen and (max-width: 480px)" href="./css/mobile.css"/>                
         <title> test Reservia</title>
@@ -18,16 +18,16 @@
         <div class="bloc_de_page">
             <header>                
                 <!--Inserstion de l'image logo Reservia-->
+               <nav class="liens">                                                                           
+                        <div><img src="Projet2_Reservia/images/logo/Reservia@3x.png" class="logo_reservia" alt="logo Reservia"/></div>
 
-                <div class="liens">                                                       
-                    <div><img src="Projet2_Reservia/images/logo/Reservia@3x.png" class="logo_reservia" alt="logo Reservia"/></div>
-
-                     
-                    <div><a href="#">S'inscrire</a></div>
-                    <div><a href="#titre_hebergement">Hébergements</a></div>
-                    <div><a href="#titre_activite">Activités</a></div> 
-                                   
-                </div>
+                        
+                        <div><a href="#">S'inscrire</a></div>
+                        <div><a href="#titre_hebergement">Hébergements</a></div>
+                        <div><a href="#titre_activite">Activités</a></div>
+                </nav>
+            </header>
+            <section>
 
                 <div class="deux_titre">
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
@@ -43,12 +43,12 @@
                         <input type="submit" value="" id="recherche" /><i class="fas fa-search" ></i>
                     </div>                                             
                 </div>
-            </header>
+            
 
-            <section> 
+            
                 <nav> 
                     <ul class="liens_filtres">
-                        <li>Filtres</li>                        
+                       <li>Filtres</li>                       
                         <li><i class="fas fa-money-bill-wave"></i><a href="#">Économique</a></li>                         
                         <li><i class="fas fa-child"></i><a href="#">Familial</a></li>                        
                         <li><i class="fas fa-heart"></i><a href="#">Romantique</a></li>                       
@@ -71,10 +71,9 @@
                                 <a class="carte" href="#">                         
                                     <div> 
                                     <!--<div class="images_hebergement">  -->                       
-                                    <img src="Projet2_Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image Auberge la cannebière"/>                           
-                                    <!-- </div>-->                     
+                                    <img src="Projet2_Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image Auberge la cannebière"/>
                                     </div>                                     
-                                    <h4>Auberge la cannebière</h4>
+                                    <h3>Auberge la cannebière</h3>
                                     <div>Nuit à partir de 25<i class="fas fa-euro-sign"></i></div>
 
                                     <div class="rating">
@@ -175,7 +174,7 @@
 
                             <div class="cartes_aside">
                                 <!-- ma première carte aside -->
-                                <div class="carte_aside"> 
+                                <a class="carte_aside" href="#"> 
                                     <div>                                        
                                     <img src="Projet2_Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image Hôtel le soleil du matin"/>                                    
                                     </div>
@@ -192,9 +191,9 @@
                                             <i class="fas fa-star"></i>                                                        
                                         </div>                                    
                                     </div>
-                                </div>
+                                </a>
                                 <!-- ma deuxième carte aside -->
-                                <div class="carte_aside"> 
+                                <a class="carte_aside" href="#"> 
                                     <div>                                        
                                         <img src="Projet2_Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image Au coeur de l'eau chambres d'hôtes"/>                                    
                                     </div>
@@ -211,9 +210,9 @@
                                             <i class="fas fa-star grey_star"></i>                                                        
                                         </div>                                       
                                     </div>
-                                </div>
+                                </a>
                                 <!-- ma troisième carte aside -->      
-                                <div class="carte_aside"> 
+                                <a class="carte_aside" href="a"> 
                                     <div>                                        
                                         <img src="Projet2_Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image Hôtel Tout bleu et Blanc"/>                                    
                                     </div>
@@ -230,7 +229,7 @@
                                             <i class="fas fa-star grey_star"></i>                                                        
                                         </div>                                    
                                     </div>
-                                </div>
+                                </a>
                             </div> <!-- .cartes_aside -->       
                         </aside>                     
                 </div> <!-- div.class "cont_heberg_populaire" -->
@@ -281,8 +280,7 @@
                         <li>Conditions générales de ventes</li>
                         <li>Données et confidentialité</li>
             
-                    </ul>               
-                    
+                    </ul>
                         
                     <!--  Deuxième de pie de page-->
                     <ul>

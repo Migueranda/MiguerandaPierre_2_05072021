@@ -9,34 +9,33 @@ body{
     margin-left:auto;  
     margin-right:auto; 
 }
-/* HEADER : Logo reservia, champ de saisi, lien d'haut à droite*/
+/* HEADER : Logo reservia, champ de saisi, liens d'entête*/
 
 img.logo_reservia{ 
-    width: 17%;
- }
-  
- div.liens > div:nth-child(1){
-    width: 80%;
-    border-style: none;
- }
+    width: 10%;
+}
 
-div.liens{
+/* LIENS D'ENTETE */
+
+nav.liens{
     display: flex;    
-    margin-top: 2em;
+    margin-top: 2.7em;
     align-items: center;
     width: 100%;    
     font-size: 1.1em;       
 }
-
- /* LIENS D'ENTETE */
+  
+nav.liens > div:nth-child(1){
+    width: 80%;
+    border-style: none;
+ } 
 
 a, a:hover, a:focus, a:active{ 
     text-decoration: none;
     color: inherit;
-    
 }
 
-div.liens > div > a:hover { 
+nav.liens > div > a:hover { 
     color:#0065FC;
     border-top-style: solid;    
     border-width: 2px;    
@@ -44,21 +43,17 @@ div.liens > div > a:hover {
     text-decoration:none;
 } 
 
- .liens> div  > a{     
+.liens > div  > a{     
     padding-right: 15px;
     padding-left: 15px;
- }
+}
 
- div.liens > div:nth-child(2){      
+nav.liens > div:nth-child(2){      
     color: #0065FC; 
     font-weight: bold; 
- }
-
-  div.liens > div:nth-child(2){
     order: 3;
- } 
+}
 
-/* MODIFICATIONS RESPONSIVE (start) */
 #recherche{
     display: none;
 }
@@ -66,7 +61,7 @@ div.liens > div > a:hover {
 .icon_input i{
     display: none;
 } 
- /* end */
+ 
 
 h2 {
     font-weight: bold;
@@ -102,13 +97,13 @@ h4 {
     font-weight: bold;
 }
 
-#ville{    
-    height:2.6em;
+#ville{ 
     width: 10%;
     font-size: 0.7em;
     font-weight: bold;    
-    border: none;   
+    border: none; 
 }
+
 
 ::placeholder {
     color:black;    
@@ -124,8 +119,8 @@ h4 {
     align-items:center ;
 }
 
+/* SECTION: LIEN DE FILTRE */
 
- /* SECTION: LIEN DE FILTRE */
 ul.liens_filtres {
     display: flex;
     padding-left: 0em;     
@@ -198,17 +193,16 @@ div.info_icon > i{
     display: flex;     
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 100%;
 }
 
 /* HERBERGEMENT(MARSEILLE)*/
 .hebergement{       
-    background-color: #F2F2F2;    
+    background-color: #F2F2F2;  
     border-radius: 1em;
-    width: 65%;
-    padding-left:2%;            
+    width: 70%;
 }
 /* Style d'image Hébergement*/
-
 
 #titre_hebergement{    
     margin-left: 3%;
@@ -218,7 +212,8 @@ div.info_icon > i{
 article.cartes {
     display: flex;
     flex-wrap: wrap;   
-    justify-content: space-around;     
+    justify-content: space-around; 
+    padding-left: 2%;    
 }
 
 a.carte {
@@ -228,12 +223,12 @@ a.carte {
     padding-top: 0.4em;
     font-size: 0.8em;  
     margin-right:2%;
-    margin-bottom: 3%;
-    width: 17em;
+    margin-bottom: 3%;    
+    width: 29%;
     box-shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
 }
 
- a.carte:hover {
+a.carte:hover {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
 }
  
@@ -245,11 +240,11 @@ a.carte > div > img{
 }
 
 /* rating en bleu générique */
- a.carte > .rating {
+a.carte > .rating {
     color: #0065FC;
     margin-top: 0.6em;
     margin-bottom: 1em;
- }
+}
  
  /* on spécifie l'étoile qui doit être grise */
  a.carte > .rating > i.grey_star  {
@@ -258,17 +253,18 @@ a.carte > div > img{
 
 .afficher_plus{
     font-weight: bold;
+    margin-left: 5%;
 } 
 
   /* LES PLUS POPULAIRES */  
 
- aside.populaire{   
+aside.populaire{   
     display: flex;   
     flex-wrap: wrap; 
-    background-color: #F2F2F2;
-    border-radius: 1em; 
-    margin-left: 3%;    
-    flex-direction: column;      
+    background-color: #F2F2F2;    
+    border-radius: 1em;    
+    flex-direction: column;
+    width: 27%; 
 } 
 
 .cartes_aside{ 
@@ -276,11 +272,7 @@ a.carte > div > img{
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    flex: 1 16em;
-    min-width: 20em;
-    max-width: 35%;     
 } 
- 
 
 h2.titre_populaire{
     font-size: 1.3em;
@@ -293,47 +285,51 @@ h2.titre_populaire > i {
     margin-right: 7%;   
 }
 
- div.carte_aside{
+a.carte_aside{
     display: flex;    
     background-color: white;
     border-radius: 1em;
     font-size: 0.8em;    
-    margin-bottom: 13%;  
-    width: 20em;
+    margin-bottom: 13%;
+    width: 80%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-div.carte_aside > div {
+a.carte_aside:hover{
+    box-shadow:rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+a.carte_aside > div {
     margin-left: 2%;
     margin-top: 2%; 
     margin-bottom: 1%; 
 } 
 
-div.carte_aside > div:first-child{
+a.carte_aside > div:first-child{
     width: 40%;  
 }
 
-div.carte_aside > div:last-child{
+a.carte_aside > div:last-child{
     width: 60%;  
 }
 
-div.carte_aside > div > img{        
+a.carte_aside > div > img{        
     width: 100%;    
     border-radius:15px 0px 0px 15px; 
     height: 9.5em;
     object-fit: cover;         
 }
 
-div.carte_aside > div > h6 {
+a.carte_aside > div > h6 {
     font-weight: bold;
 }
 
-div.carte_aside > div > .rating {
+a.carte_aside > div > .rating {
     color:#0065FC;
     margin-bottom: 5%; 
 }
 
-div.carte_aside > div > .rating > i.grey_star{
+a.carte_aside > div > .rating > i.grey_star{
     color: #F2F2F2;
 } 
 
@@ -345,7 +341,7 @@ div.content {
 
 /* ACTIVITES A MARSEILLE */
 #titre_activite{
-    margin-left: 2%;    
+    margin-left: 2%; 
 }
 
 .conteneur_activite{
@@ -361,7 +357,7 @@ div.content {
 /* activite_xl - start */
 
 a.activite_xl {
-    width: 15em;
+    width: 22%;
     border-radius: 1em; 
     background-color:white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px ;
@@ -391,7 +387,7 @@ a.activite_xl > h5{
 div.conteneur_activite_md {
     display: flex;    
     flex-direction: column; 
-    width: 15em;
+    width: 22%;
     justify-content: space-between;
 }
 
